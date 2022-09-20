@@ -51,8 +51,18 @@ html, body {
 
 /* Set core body defaults */
 body {
-  text-rendering: optimizeSpeed;
-  line-height: 1;
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+    background-color: var(--clr-cream);
+    color: var(--clr-dark-grayish-blue);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	text-rendering: optimizeSpeed;
+	line-height: 1;
+	background-color: var(--clr-cream);
+	color: var(--clr-dark-grayish-blue);
 }
 
 /* A elements that don't have a class get default styles */
@@ -118,13 +128,6 @@ select {
 }
 
 // --- Layout
-
-body {
-	display: grid;
-	place-items: center;
-	background-color: var(--clr-cream);
-	color: var(--clr-dark-grayish-blue);
-}
 
 .card {
   background-color: white;
